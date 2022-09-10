@@ -25,7 +25,7 @@ namespace NZWalks.API.Controllers
         [HttpGet]
         public async Task<IActionResult >GetAllRegionsAsync()
         {
-            var regions= await regionRepository.GetAllAsync();
+            var region= await regionRepository.GetAllAsync();
 
             //Return DTO Regions
             /*
@@ -44,9 +44,9 @@ namespace NZWalks.API.Controllers
                             };
                             regionsDTO.Add(regionDTO);
                         });*/
-            mapper.Map<List<Models.DTO.Region>>(regions);
+            mapper.Map<List<Models.DTO.Region>>(region);
 
-            return Ok(regions);
+            return Ok(region);
         }
 
         [HttpGet]

@@ -60,8 +60,7 @@ namespace NZWalks.API.Repositories
             existingRegion.Lat = region.Lat;
             existingRegion.Long = region.Long;
             existingRegion.Population = region.Population;
-
-
+                       
             await nZWalksDbContext.SaveChangesAsync();
 
             return existingRegion;
