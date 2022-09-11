@@ -6,8 +6,6 @@ namespace NZWalks.API.Data
     public class NZWalksDbContext : DbContext
 
     {
-        internal object Region;
-
         public NZWalksDbContext(DbContextOptions<NZWalksDbContext> options): base(options)
         {
 

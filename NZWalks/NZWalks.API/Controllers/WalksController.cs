@@ -120,5 +120,7 @@ namespace NZWalks.API.Controllers
             var walkDTO=mapper.Map<Models.DTO.Walk>(walkDomain);
             return Ok(walkDTO);
         }
+
+        
     }
 }
